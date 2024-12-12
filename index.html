@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        
+        /* Heading Styles */
+        .heading {
+            background: linear-gradient(135deg, #8a2be2, #ff7f50); /* Elegant Gradient */
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1.2s ease-out forwards;
+            opacity: 0;
+            transform: translateY(-60px);
+        }
+        .heading h1 {
+            font-size: 2.8em;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+        .heading h2 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-top: 5px;
+            color: #fff;
+        }
+        
+        /* Data List Styling */
+        .data-list {
+            background-color: #28a745;
+            color: white;
+            padding: 50px 30px;
+            list-style: none;
+            border-radius: 10px;
+            width: 75%;
+            margin: 50px auto;
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards 1s;
+            transform: translateY(50px);
+        }
+        .data-list li {
+            font-size: 1.3em;
+            padding: 14px 20px;
+            margin: 12px 0;
+            border-radius: 8px;
+            background-color: #218838;
+            font-weight: 900;
+            transition: transform 0.3s, background-color 0.3s ease;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        .data-list li:nth-child(odd) {
+            animation-delay: 0.4s;
+        }
+        .data-list li:nth-child(even) {
+            animation-delay: 0.6s;
+        }
+        .data-list li:hover {
+            background-color: #1e7e34;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Footer Styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+        
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-mode .heading {
+            background: linear-gradient(135deg, #2e8b57, #f4a261);
+        }
+        .dark-mode .data-list {
+            background-color: #006400;
+        }
+        .dark-mode .data-list li {
+            background-color: #1a6b3f;
+        }
+        .dark-mode .footer {
+            background-color: #222;
+        }
+        
+        /* Dark Mode Toggle Button */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            z-index: 1000; /* Ensure it appears above other content */
+        }
+        .dark-mode-toggle:hover {
+            background-color: #555;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .heading h1 {
+                font-size: 2.4em;
+            }
+            .heading h2 {
+                font-size: 1.2em;
+            }
+            .data-list {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    
+    <!-- Heading Section -->
+    <div class="heading">
+        <h1>सुनील सचान दिसंबर (कानपुर)</h1>
+        <h2>SUNIL SACHAN DECEMBER (KANPUR)</h2>
+    </div>
+    
+    <!-- Data List Section -->
+    <ul class="data-list">
+        <li>1=UP32RN4210</li><li>2=UP32SN1875</li><li>3=UP32UN5529</li><li>4=UP32WN1783</li><li>5=UP32XN0199</li><li>6=UP78GT2149</li><li>7=UP91AT9799</li><li>8=UP78JT4143</li><li>9=UP91T5156</li><li>10=UP77AN5304</li><li>11=UP91AT2208</li><li>12=UP95T6887</li><li>13=UP78FN3040</li><li>14=UP78FT3125</li><li>15=UP78GN6564</li><li>16=UP78HN9975</li><li>17=UP93BT3531</li><li>18=UP32PN5872</li><li>19=UP71AT0941</li><li>20=UP32SN6926</li><li>21=UP79AT5714</li><li>22=UP77AN3215</li><li>23=UP77AN3195</li><li>24=UP78DN7734</li><li>25=UP78FT3866</li><li>26=UP78HN6599</li><li>27=UP78KN3965</li><li>28=UP78HN8732</li><li>29=UP78JT9032</li><li>30=UP78JT8832</li><li>31=UP78JT6962</li><li>32=UP78JT8932</li><li>33=UP91T7623</li><li>34=UP78HN1803</li><li>35=UP78JN0837</li><li>36=UP78JT2955</li><li>37=UP78JT3132</li><li>38=UP78JT3446</li><li>39=UP78HN3219</li><li>40=UP78KN9525</li><li>41=UP78JT0418</li><li>42=UP77AT6257</li><li>43=UP77BN0906</li><li>44=UP78KN4083</li><li>45=UP92AT3536</li><li>46=UP32HN8883</li><li>47=UP77AN5282</li><li>48=UP95T7251</li><li>49=UP95T7252</li><li>50=UP91T7168</li><li>51=UP32NN9824</li><li>52=UP35AT1320</li><li>53=UP35AT2544</li><li>54=UP35AT3220</li><li>55=UP35AT5404</li><li>56=UP35BT8924</li><li>57=UP35BT8925</li><li>58=UP32KN8282</li><li>59=UP77AN4748</li><li>60=UP95T9399</li><li>61=UP78GN6562</li><li>62=UP78JT4940</li><li>63=UP78JT4939</li><li>64=UP78JT4941</li><li>65=UP78JT4942</li><li>66=UP78JT4943</li><li>67=UP78JT9814</li><li>68=UP78JT9816</li><li>69=UP78JT9817</li><li>70=UP78JT6994</li><li>71=UP78JT7081</li><li>72=UP78JT7082</li><li>73=UP78JT7083</li><li>74=UP78JT7090</li><li>75=UP91AT0351</li><li>76=UP91AT2212</li><li>77=UP32NN9555</li><li>78=UP78FT3675</li><li>79=UP35AT1379</li><li>80=UP78DT7764</li><li>81=UP78FN9039</li><li>82=UP78FN1983</li><li>83=UP78DT5367</li><li>84=UP32NN8405</li><li>85=UP32QN1718</li><li>86=UP78HT8683</li><li>87=UP78GT7821</li><li>88=UP92AT4986</li><li>89=UP92AT9334</li><li>90=UP79AT5360</li><li>91=UP92T9320</li><li>92=UP78GN5032</li><li>93=UP78GN5161</li><li>94=UP90AT1373</li><li>95=UP32KN4820</li><li>96=UP32JN8823</li><li>97=UP78KN3031</li><li>98=UP78JN0760</li><li>99=UP78GT0658</li><li>100=UP78DN9183</li><li>101=UP78FN2198</li><li>102=UP77AN3223</li><li>103=UP78GT4124</li><li>104=UP78GT4125</li><li>105=UP78GT4126</li><li>106=UP78GN8662</li><li>107=UP78GN8698</li><li>108=UP78GT0673</li><li>109=UP78GT0674</li><li>110=UP78FT6177</li><li>111=UP78GT7077</li><li>112=UP78HT3477</li><li>113=UP78JN3677</li><li>114=UP78JT1364</li><li>115=UP78FN4981</li><li>116=UP95T4590</li><li>117=UP77AN4882</li><li>118=UP41AT4870</li><li>119=HR58D4016</li><li>120=UP78HN9138</li><li>121=UP78FN4988</li><li>122=UP78HN6598</li><li>123=UP78JT2099</li><li>124=UP95AT1955</li><li>125=UP91T4584</li>
+    </ul>
+    
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>MADE THIS WEBSITE BY VIVEK SACHAN SON OF SUNIL SACHAN ❤️</p>
+    </div>
+    
+    <script>
+        // Toggle dark mode function
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            const button = document.querySelector('.dark-mode-toggle');
+            button.innerHTML = document.body.classList.contains('dark-mode') ? '🌞 Light Mode' : '🌙 Dark Mode';
+        }
+    </script>
+
+</body>
+</html>
